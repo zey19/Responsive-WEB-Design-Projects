@@ -1,0 +1,83 @@
+.speciality {
+    padding: 15%;
+}
+
+.speciality h1{
+    font-size: 60px;
+}
+
+.speciality .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.speciality .box-container .box {
+    flex: 1 1 40rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.speciality .box-container .box .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.speciality .box-container .box .content {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+}
+
+.speciality .box-container .box .content img {
+    margin: 1.5rem 0;
+}
+
+.speciality .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.speciality .box-container .box .content p {
+    font-size: 2rem;
+    color: #666;
+    padding: 1rem 0;
+
+}
+
+.speciality .box-container .box:hover .image {
+    top: 0;
+}
+
+.speciality .box-container .box:hover .content {
+    transform: translateY(100%);
+}
+
+@media(max-width:991px) {
+    .speciality{
+        font-size: 100%;
+        padding-top: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .speciality .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+    }
+    .speciality .box-container .box .content p {
+        font-size: 2.3rem;
+        color: #666;
+        padding: 0 0;
+    
+    }
+    section {
+        padding: 2rem;
+    }
+}
